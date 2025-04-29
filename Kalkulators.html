@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- Norāda, ka šis ir HTML5 dokuments -->
+<html lang="lv">
+<!-- Iestata lapas valodu kā latviešu -->
+
+<head>
+  <!-- Galvene satur metadatus, stilu un skriptu piesaistes -->
+  
+  <meta charset="UTF-8">
+  <!-- Norāda, ka lapa lieto UTF-8 simbolu kodējumu (lai rāda latviešu burtus) -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Nodrošina, ka lapa pareizi izskatās arī uz mobilajām ierīcēm -->
+  
+  <title>Kalkulators</title>
+  <!-- Lapas nosaukums, kas redzams cilnē -->
+
+  <link rel="stylesheet" href="Kalkulators.css">
+  <!-- Pievieno CSS failu, kurā definēti kalkulatora stili -->
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Pievieno vēl vienu stilu failu ar vispārējiem lapas stiliem -->
+</head>
+
+<body style="background-color: rgb(206, 155, 195);">
+<!-- Iestata lapas fona krāsu -->
+
+  <h1 style="text-align: center; font-size: 300%;">Kalkulators</h1>
+  <!-- Galvenais virsraksts, redzams lapas augšdaļā -->
+
+  <!-- Navigācijas izvēlne -->
+  <nav>
+    <ul>
+      <li><a href="Index.html">MĀJAS</a></li>
+      <li>
+        <a href="#">Vasara</a>
+        <ul>
+          <li><a href="#">Vasara 2024</a></li>
+          <li><a href="#">Vasara 2023</a></li>
+          <li><a href="#">Vasara 2022</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Jūnijā</a>
+        <ul>
+          <li><a href="#">Jūlijā</a></li>
+          <li>
+            <a href="#">Augustā</a>
+            <ul>
+              <li>
+                <a href="#">Atmiņas</a>
+                <ul>
+                  <li><a href="#">Ģimene</a></li>
+                  <li><a href="#">Draugi</a></li>
+                  <li><a href="#">Es</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Bildes</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Citas izvēlnes pogas -->
+      <li><a href="Jolka2.html">EGLĪTE</a></li>
+      <li><a href="Reģistracija.html">JAUNS KONTS</a></li>
+      <li><a href="05.11.2024.html">POGA</a></li>
+      <li><a href="SPĒLE.html">SPĒLE</a></li>
+      <li><a href="SPĒLE2.html">MINI SPĒLE</a></li>
+      <li><a href="Kalkulators.html">KALKULATORS</a></li>
+      <li><a href="25.03.2025.html">VIKTORĪNA</a></li>
+      <li><a href="Atkārtojums.html">FORMAS</a></li>
+      <li><a href="Figma.html">SAZINIETIES AR MUMS</a></li>
+      <li><a href="daramodarbusaraksts.html">DARĀMO DARBU SARAKSTS</a></li>
+    </ul>
+  </nav>
+
+  <!-- Kalkulatora ievades lauki un pogas -->
+  <div class="calculator">
+    <input type="number" id="num1" placeholder="Pirmais skaitlis">
+    <!-- Pirmais skaitlis, ko lietotājs ievada -->
+
+    <input type="number" id="num2" placeholder="Otrais skaitlis">
+    <!-- Otrais skaitlis -->
+
+    <button class="poga" onclick="addNumbers()">Saskaitīt</button>
+    <!-- Poga, kas izsauc saskaitīšanas funkciju -->
+
+    <button class="poga" onclick="subtractNumbers()">Atņemt</button>
+    <!-- Poga, kas izsauc atņemšanas funkciju -->
+  </div>
+
+  <!-- JavaScript fails ar funkcijām kalkulatoram -->
+  <script src="Kalkulators.js"></script>
+</body>
+
+</html>
